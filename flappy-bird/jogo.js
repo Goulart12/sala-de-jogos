@@ -1,6 +1,15 @@
 let frames = 0;
 const som_HIT = new Audio();
-som_HIT.src = './efeitos/hit.wav'
+som_HIT.src = './efeitos/hit.wav';
+
+const som_CAIU = new Audio();
+som_CAIU.src = './efeitos/caiu.wav';
+
+const som_PONTO = new Audio();
+som_PONTO.src = './efeitos/ponto.wav';
+
+const som_PULO = new Audio();
+som_PULO.src = './efeitos/pulo.wav';
 
 const sprites = new Image();
 sprites.src = './sprites.png';
@@ -98,12 +107,13 @@ function criaFlappyBird() {
         pulo: 4.6,
         pula() {
             flappyBird.velocidade = - flappyBird.pulo;
+            som_PULO.play();
         },
         gravidade: 0.25,
         velocidade: 0,
         atualiza() {
             if(fazColisao(flappyBird, globais.chao)) {
-                som_HIT.play();
+                som_CAIU.play();
 
                 mudaParaTela(Telas.GAME_OVER)
                                
@@ -214,7 +224,7 @@ function criaCanos() {
                     canos.largura, canos.altura,
                 )
 
-                //cano do chào
+                //cano do chão
                 const canoChaoX = par.x;
                 const canoChaoY = canos.altura + espacamentoEntreCanos + yRandom;
                 contexto.drawImage(
@@ -291,9 +301,10 @@ function criaPlacar() {
         atualiza() {
             const intervaloDeFrames = 10;
             const passouOIntervalo = frames % intervaloDeFrames === 0;
+            //const passouOIntervalo = intervaloDeFrames - canoChaoX === 0;
 
             if(passouOIntervalo) {
-                placar.pontuacao = placar.pontuacao + 1
+                placar.pontuacao = placar.pontuacao + 1;
             }
             
         },
