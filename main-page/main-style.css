@@ -7,10 +7,13 @@
 
 body {
     background: #F8F9FF;
+}
+
+section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 .div-title {
@@ -19,11 +22,14 @@ body {
     justify-content: center;
     width: 391px;
     height: 144px;
+    margin-top: 122px;
+    margin-bottom: 121px;
 }
 
 .div-title .img-title {
     width: 139px;
     height: 144px;
+    margin-right: 10px;
 }
 
 .div-title .title {
@@ -32,8 +38,69 @@ body {
     font-weight: normal;
     font-size: 48px;
     line-height: 48px;
-    display: flex;
-    align-items: center;
 
     color: #8F87F1;
+}
+
+.game-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.game-card {
+    width: 420px;
+    height: 500px;
+
+    background: #F8F9FF;
+    border: 3px solid #8F87F1;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-card .card-title {
+    width: 264px;
+    height: 24px;
+    margin-top: 28px;
+    
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;  
+    text-align: center;  
+    
+    color: #8F87F1;
+}
+
+.game-card .card-img {
+    width: 420px;
+    height: 297px;
+}
+
+.game-card .card-button {
+    width: 100px;
+    height: 34px;
+    margin-bottom: 39px;
+
+    background: #8F87F1;
+    border-radius: 25px;
+    border: none;
+
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    
+
+    color: #F8F9FF;
+}
+
+.game-card .card-button:hover {
+    color: #8F87F1;
+    background: #F8F9FF;
 }
