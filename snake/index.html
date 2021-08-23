@@ -7,11 +7,24 @@
     <title>Snake</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../main-page/modal.css">
 </head>
 <body>
     <h1>Snake Game!</h1>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <button class="btn-close" onclick="fecharModal()"><span class="close">&times;</span></button>
+            <h2 class="modal-title">Instruções</h2>
+            <p class="modal-parag">Utilize as setas para controlar a cobrinha e comer as maçãs.</p>
+        </div>
+    </div>
+
     <canvas id="snake" width="512" height="512"></canvas>
 
+    <button class="btn-modal" onclick="abrirModal()">Instruções</button>
+
     <script src="script.js"></script>
+    <script src="../main-page/main-script.js"></script>
 </body>
 </html>
