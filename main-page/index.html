@@ -11,29 +11,31 @@
 <body>
     <section>
         <div class="div-title">
-            <img src="./assets/game-console.png" alt="Joguinhos" class="img-title">
-            <h1 class="title">Sala de Jogos</h1>
+            <img src="./assets/game-console.png" alt="Joguinhos" class="img-title" data-normal="./assets/game-console.png" data-hover="./assets/Flappy_Logo.png" data-hover1="./assets/snake.png" data-hover2="./assets/memory.png">
+            <h1 class="title" id="main-title">Sala de Jogos</h1>
         </div>
 
         <div class="game-cards">
-            <div class="game-card">
+            <div class="game-card flappy-bird-card">
                 <h2 class="card-title">Flappy Bird</h2>
                 <img src="./assets/flappy-bird.jpg" alt="FlappyBird" class="card-img">
                 <button class="card-button">Jogar</button>
             </div>
 
-            <div class="game-card">
+            <div class="game-card snake-card">
                 <h2 class="card-title">Snake</h2>
                 <img src="./assets/snake-card.png" alt="Snake" class="card-img">
                 <button class="card-button">Jogar</button>
             </div>
 
-            <div class="game-card">
+            <div class="game-card memory-game-card">
                 <h2 class="card-title">Memória</h2>
                 <img src="./assets/memory-game-card.png" alt="Memória" class="card-img">
                 <button class="card-button">Jogar</button>
             </div>
         </div>
     </section>
+
+    <script src="./main-script.js"></script>
 </body>
 </html>
