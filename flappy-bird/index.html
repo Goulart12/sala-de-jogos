@@ -6,17 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird</title>
 
+    <link rel="stylesheet" href="../main-page/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button class="btn-back"><img src="../main-page/assets/arrow.svg" alt="Voltar"></button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <button class="btn-close" onclick="fecharModal()"><span class="close">&times;</span></button>
+            <h2 class="modal-title">Instruções</h2>
+            <p class="modal-parag">Clique na tela para controlar o voo do pássaro e passar pelos canos.</p>
+        </div>
+    </div>
+
     <canvas id="game-canvas" width="320" height="480"></canvas>
+
+    <button class="btn-modal" onclick="abrirModal()">Instruções</button>
 
     <style>
         body {
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background: #F8F9FF;
@@ -29,5 +43,6 @@
     </style>
 
     <script src="./jogo.js"></script>
+    <script src="../main-page/main-script.js"></script>
 </body>
 </html>

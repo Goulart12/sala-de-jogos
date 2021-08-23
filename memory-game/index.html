@@ -7,8 +7,19 @@
     <title>Jogo da Memória</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../main-page/modal.css">
 </head>
 <body>
+    <button class="btn-back"><img src="../main-page/assets/arrow.svg" alt="Voltar"></button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <button class="btn-close" onclick="fecharModal()"><span class="close">&times;</span></button>
+            <h2 class="modal-title">Instruções</h2>
+            <p class="modal-parag">Clique na carta desejada e depois clique em outra em busca da cópia da anterior.</p>
+        </div>
+    </div>
+
     <section class="memory-game">
         <div class="memory-card" data-framework="apple">
             <img class="front-face" src="img/apple.png" alt="apple">
@@ -71,6 +82,8 @@
         </div>
     </section>
 
+    <button class="btn-modal" onclick="abrirModal()">Instruções</button>
     <script src="./script-novo.js"></script>
+    <script src="../main-page/main-script.js"></script>
 </body>
 </html>

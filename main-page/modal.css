@@ -94,3 +94,28 @@
     color: #8F87F1;
     background: #F8F9FF;
 }
+
+.btn-back {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: #F8F9FF;
+    cursor: pointer;
+
+    position: absolute;
+    left: 111px;
+    top: 81px;
+
+}
+
+.btn-back img {
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.btn-back img:hover {
+    width: 50px;
+    height: 50px;
+}

@@ -8,12 +8,15 @@ body {
     height: 100vh;
     display: flex;
     background: #F8F9FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .memory-game {
     width: 640px;
     height: 640px;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
