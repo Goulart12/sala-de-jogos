@@ -58,3 +58,27 @@ body {
     transform: rotateY(180deg);
 }
 
+.div-title-inGame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 391px;
+    height: 144px;
+    margin-bottom: 10px;
+}
+
+.div-title-inGame .img-title-inGame {
+    width: 139px;
+    height: 144px;
+    margin-right: 10px;
+}
+
+.div-title-inGame .title-inGame {
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+
+    color: #050AB1;
+}

@@ -14,6 +14,10 @@
 <body>
     <button class="btn-back" onclick="window.location.href='../main-page/index.html'"><img src="../main-page/assets/arrow.svg" alt="Voltar"></button>
 
+    <div class="div-title-inGame">
+        <img src="../main-page/assets/Flappy_Logo.png" alt="Joguinhos" class="img-title-inGame" data-normal="./assets/game-console.png" data-hover="./assets/Flappy_Logo.png" data-hover1="./assets/snake.png" data-hover2="./assets/memory.png">
+    </div>
+
     <div id="myModal" class="modal">
         <div class="modal-content">
             <button class="btn-close" onclick="fecharModal()"><span class="close">&times;</span></button>
@@ -40,6 +44,22 @@
             display: block;
             margin: 0 auto;
         }
+
+        .div-title-inGame {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 391px;
+            height: 144px;
+            margin-bottom: 20px;
+        }
+
+        .div-title-inGame .img-title-inGame {
+            width: 391px;
+            height: 144px;
+            margin-right: 10px;
+        }
+
     </style>
 
     <script src="./jogo.js"></script>

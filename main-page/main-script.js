@@ -1,4 +1,5 @@
-//Flappy bird
+//Flappy Bird
+
 var flappyCard = document.querySelector('.flappy-bird-card');
 flappyCard.addEventListener("mouseover", changeBackgroundFlappy);
 
@@ -12,7 +13,7 @@ function changeBackgroundFlappy() {
     img.style.width = "491px";
     img.style.height = "164px";
     h2.style.color = "#F8F9FF";
-   
+    
     //document.body.style.background = "url('./assets/flappybird-background.png')";
 }
 
@@ -33,6 +34,7 @@ function changeBackgroundCommonFlappy() {
 };
 
 //Snake
+
 var snakeCard = document.querySelector('.snake-card');
 snakeCard.addEventListener("mouseover", changeBackgroundSnake);
 
@@ -64,7 +66,7 @@ function changeBackgroundCommonSnake() {
     //document.body.style.background = "#F8F9FF";
 };
 
-//memória
+//Memory Game
 var memoryCard = document.querySelector('.memory-game-card');
 memoryCard.addEventListener("mouseover", changeBackgroundMemory);
 
@@ -94,7 +96,7 @@ function changeBackgroundCommonMemory() {
     //document.body.style.background = "#F8F9FF";
 };
 
-//modal
+//Modal
 var modal = document.getElementById("myModal");
 
 function abrirModal() { //função para abrir o modal
@@ -109,10 +111,9 @@ function fecharModal() { //função para fechar o modal
 
 window.onclick = function(event) {
     if (event.target == modal) {
-      myModal.style.display = "none";
+    myModal.style.display = "none";
     }
-  }
-
+}
 
 
 
